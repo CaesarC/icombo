@@ -132,7 +132,7 @@ if ngx.var.arg_c ~=nil and ngx.var.admin_ip ~= nil then
     local ip       = getClientIp()
     if (tableFind(admin_ip, ip)) ~= nil then
         delFile(posix, ngx.var.cache_dir)
-        ngx.header.content_type  = types["default"]
+        ngx.header.content_type  = "text/html"
         ngx.say('success')
         ngx.exit(200)
     end
