@@ -34,7 +34,7 @@ lua版Minify，合并CSS、JS文件
 三、访问URL：  
 http://x.x.x.x/?f=static/index/header.css,static/index/footer.css
 
-四、常用功能
+四、常用功能  
 1、自定义CSS、JS目录（默认在当前目录）
 ```bash
 set $css_dir "include/css/";
