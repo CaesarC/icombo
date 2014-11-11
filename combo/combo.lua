@@ -88,7 +88,7 @@ if file_lists == nil then
     log("param f is empty")
 end
 
-local types            = {["js"]="application/x-javascript", ["css"]="text/css", ["default"]="text/html"}
+local types            = {["js"]="application/x-javascript", ["css"]="text/css"}
 local posix            = require 'posix'
 local root             = ngx.var.document_root..'/'
 local file_dir         = root
