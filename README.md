@@ -26,7 +26,6 @@ lua版Minify，合并CSS、JS文件
     location = / {
         set $cache_dir "/dev/shm/combo/";
         set $css_trim "on";
-        set $css_path_auto "images/";
         set $admin_ip "192.168.8.63,192.168.8.181";
         content_by_lua_file /usr/local/nginx/conf/combo/combo.lua;
     }
