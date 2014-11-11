@@ -34,29 +34,33 @@ lua版Minify，合并CSS、JS文件
 三、访问URL：  
 http://x.x.x.x/?f=static/index/header.css,static/index/footer.css
 
-**[常用功能]**  
-一、自定义CSS、JS目录（默认在当前目录）
+四、常用功能
+1、自定义CSS、JS目录（默认在当前目录）
 ```bash
 set $css_dir "include/css/";
 set $js_dir  "include/javascript/";
 ```
-二、多个图片路径替换：  
+2、多个图片路径替换：  
 采用 | 分隔，替换多个路径：  
 ```bash
 set $css_replace "../../../images,http://images.xxx.com|../../../ck,http://images.xxx.com";
 ```
-三、开启清除CSS注释功能：
+3、开启清除CSS注释功能：
 ```bash
 set $css_trim "on";
 ```
-四、根据CSS目录，自动替换图片相对路径：
+4、根据CSS目录，自动替换图片相对路径：
 ```bash
 set $css_path_auto "images/";
 ```
-五、删除服务器的所有缓存文件（慎用）：  
+5、删除服务器的所有缓存文件（慎用）：  
 配置$admin_ip：
 ```bash
 set $admin_ip "192.168.8.63,192.168.8.181";  
 ```
 链接增加&c=1即可，页面内容显示sucess即成功：  
 http://x.x.x.x/?f=static/index/header.css,static/index/footer.css&c=1
+
+五、感谢：  
+感谢Nginx http://nginx.org  
+感谢春哥  http://www.weibo.com/agentzh
